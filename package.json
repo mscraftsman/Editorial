@@ -2,7 +2,7 @@
     "name": "mscc-ghost-podcast",
     "description": "This is MSCC Podcast. A Ghost theme bsaed on Editorial.",
     "demo": "https://podcast.mscc.mu",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "engines": {
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
