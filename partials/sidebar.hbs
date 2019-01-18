@@ -15,7 +15,7 @@
                 {{!-- We're just grabbing the 3 latest posts here but you can change
                 this to filter for a specific tag or order depending on what you want.
                 More info: https://docs.ghost.org/api/handlebars-themes/helpers/get/ --}}
-                {{#get "posts" limit="3" as |mini_post|}}
+                {{#get "posts" filter="tag:episodes" limit="3" as |mini_post|}}
                     {{#foreach mini_post}}
                     <article>
                         <h3><a href="{{url}}">{{title}}</a></h3>
@@ -27,7 +27,7 @@
         </section>
 
         {{!-- Contact --}}
-        {{#get "posts" slug="contact"as |contact|}}
+        {{#get "posts" slug="contact" as |contact|}}
             {{#if contact}}{{#foreach contact}}
                 <section>
                     <header class="major">
@@ -40,7 +40,8 @@
 
         {{!-- Footer --}}
         <footer id="footer">
-            <p class="copyright">&copy; {{@site.title}} - All rights reserved<br>
+            <p class="copyright">&copy; {{@site.title}}<br>
+            All rights reserved<br>
             Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>
             </p>
         </footer>
