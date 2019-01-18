@@ -36,7 +36,8 @@ into the {body} of the default.hbs template --}}
     </header>
 
     <section class="posts">
-        {{#foreach posts}}
+    {{#get "posts" filter="tag:episodes" as |episode|}}
+        {{#foreach episode}}
         <article>
             {{#if feature_image}}
             <a href="{{url}}" class="image fit"><img src="{{img_url feature_image}}" alt="{{title}}" /></a>
@@ -48,6 +49,7 @@ into the {body} of the default.hbs template --}}
             </ul>
         </article>
         {{/foreach}}
+    {{/get}}
     </section>
 
 </section>
