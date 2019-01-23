@@ -1,0 +1,40 @@
+{
+  "short_name": "MSCC Podcast",
+  "name": "Talks on Software Craftsmanship",
+  "description": "Each week craftsmen Cedric and Jochen have a conversation with a guest to shed some light on their experience in modern software development.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/?utm_source=pwa",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#f56a6a",
+  "background_color": "#f5f6f7",
+  "icons": [
+  {
+    "src": "/assets/mscc-podcast-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "/assets/mscc-podcast-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ],
+  "serviceworker": {
+    "src": "sw.js",
+    "update_via_cache": "none"
+  },
+  "screenshots": [
+  {
+    "src": "/assets/screenshot-1x.jpg",
+    "sizes": "640x480",
+    "type": "image/jpeg"
+  },{
+    "src": "/assets/screenshot-2x.jpg",
+    "sizes": "1280x920",
+    "type": "image/jpeg"
+  }
+  ],
+  "splash_pages": null
+}
