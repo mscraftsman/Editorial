@@ -33,12 +33,12 @@
                     {{/if}}
                     <ul class="icons">
                         {{#if @site.twitter}}
-                            <li><a href="{{twitter_url @site.twitter}}" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="{{twitter_url @site.twitter}}" class="icon fa-twitter" title="Twitter" target="_blank" rel="noopener noreferrer" aria-label="{{@site.title}} profile on Twitter"><span class="label">Twitter</span></a></li>
                         {{/if}}
                         {{#if @site.facebook}}
-                            <li><a href="{{facebook_url @site.facebook}}" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="{{facebook_url @site.facebook}}" class="icon fa-facebook" title="Facebook" target="_blank" rel="noopener noreferrer" aria-label="{{@site.title}} profile on Facebook"><span class="label">Facebook</span></a></li>
                         {{/if}}
-                        <li><a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" class="icon fa-rss" target="_blank" rel="noopener noreferrer"><span class="label" title="RSS">RSS</span></a></li>
+                        <li><a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" class="icon fa-rss" title="RSS feed" target="_blank" rel="noopener noreferrer" aria-label="RSS feed of {{@site.title}}"><span class="label" title="RSS">RSS</span></a></li>
                     </ul>
                 </header>
 
