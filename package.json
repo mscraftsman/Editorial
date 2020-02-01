@@ -2,7 +2,7 @@
     "name": "mscc-ghost-podcast",
     "description": "This is MSCC Podcast. A Ghost theme bsaed on Editorial.",
     "demo": "https://podcast.mscc.mu",
-    "version": "2.0.1",
+    "version": "3.0.2",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
@@ -52,9 +52,9 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Editorial.git"
+        "url": "https://github.com/mscraftsman/mscc-ghost-podcast.git"
     },
-    "bugs": "https://github.com/TryGhost/Editorial/issues",
+    "bugs": "https://github.com/mscraftsman/mscc-ghost-podcast/issues",
     "devDependencies": {
         "beeper": "2.0.0",
         "gscan": "3.3.0",
